@@ -10,3 +10,4 @@
 #import "VDHTTPRequestOperation.h"
 #import "VDJSONRequestOperation.h"
 #import "VDXMLRequestOperation.h"
+#import "VDHTTPClient.h"

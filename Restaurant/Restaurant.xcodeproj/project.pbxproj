@@ -78,6 +78,8 @@
 		7A56B92217CE2DE5000105FC /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A56B92117CE2DE5000105FC /* Product.m */; };
 		7A56B92517CE2DFB000105FC /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A56B92417CE2DFB000105FC /* Restaurant.m */; };
 		7A56B92817CE33BB000105FC /* VDSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A56B92717CE33BB000105FC /* VDSingleton.m */; };
+		7A56B92B17CE34EF000105FC /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A56B92A17CE34EF000105FC /* DataManager.m */; };
+		7A56B92E17CE36E0000105FC /* VDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A56B92D17CE36E0000105FC /* VDHTTPClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -223,6 +225,10 @@
 		7A56B92417CE2DFB000105FC /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
 		7A56B92617CE33BB000105FC /* VDSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDSingleton.h; sourceTree = "<group>"; };
 		7A56B92717CE33BB000105FC /* VDSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDSingleton.m; sourceTree = "<group>"; };
+		7A56B92917CE34EF000105FC /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		7A56B92A17CE34EF000105FC /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		7A56B92C17CE36E0000105FC /* VDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDHTTPClient.h; sourceTree = "<group>"; };
+		7A56B92D17CE36E0000105FC /* VDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDHTTPClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -525,6 +531,8 @@
 				7A2AFEEF17CE25E1003DB91A /* VDNetworking.h */,
 				7A2AFEF017CE25E1003DB91A /* VDXMLRequestOperation.h */,
 				7A2AFEF117CE25E1003DB91A /* VDXMLRequestOperation.m */,
+				7A56B92C17CE36E0000105FC /* VDHTTPClient.h */,
+				7A56B92D17CE36E0000105FC /* VDHTTPClient.m */,
 			);
 			path = VDNetworking;
 			sourceTree = "<group>";
@@ -563,6 +571,8 @@
 		7A2AFEFD17CE25E1003DB91A /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				7A56B92917CE34EF000105FC /* DataManager.h */,
+				7A56B92A17CE34EF000105FC /* DataManager.m */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -772,6 +782,8 @@
 				7A56B92217CE2DE5000105FC /* Product.m in Sources */,
 				7A56B92517CE2DFB000105FC /* Restaurant.m in Sources */,
 				7A56B92817CE33BB000105FC /* VDSingleton.m in Sources */,
+				7A56B92B17CE34EF000105FC /* DataManager.m in Sources */,
+				7A56B92E17CE36E0000105FC /* VDHTTPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
