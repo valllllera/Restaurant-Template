@@ -10,6 +10,6 @@
 
 @interface VDSingleton : NSObject
 
-+ (instancetype)sharedInstance
++ (instancetype)sharedInstance;
 
 @end

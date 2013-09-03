@@ -2,7 +2,7 @@
 //  Product.m
 //  Restaurant
 //
-//  Created by Жека on 28.08.13.
+//  Created by Evgeniy Tka4enko on 03.09.13.
 //  Copyright (c) 2013 Жека. All rights reserved.
 //
 
@@ -14,12 +14,11 @@
 
 @implementation Product
 
+@dynamic descr;
 @dynamic idx;
 @dynamic imageUrl;
-@dynamic descr;
 @dynamic ord;
 @dynamic title;
-@dynamic announces;
 @dynamic basketItems;
 @dynamic category;
 @dynamic priceItems;

@@ -11,10 +11,7 @@
 		7A2AFE5617CE243F003DB91A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2AFE5517CE243F003DB91A /* Foundation.framework */; };
 		7A2AFE5817CE243F003DB91A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2AFE5717CE243F003DB91A /* CoreGraphics.framework */; };
 		7A2AFE5A17CE243F003DB91A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2AFE5917CE243F003DB91A /* CoreData.framework */; };
-		7A2AFF2217CE25E1003DB91A /* NSDate+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2AFE7817CE25E1003DB91A /* NSDate+Extensions.m */; };
 		7A2AFF2317CE25E1003DB91A /* UITabBarController+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2AFE7A17CE25E1003DB91A /* UITabBarController+Extensions.m */; };
-		7A2AFF2417CE25E1003DB91A /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2AFE7C17CE25E1003DB91A /* UIView+Animation.m */; };
-		7A2AFF2517CE25E1003DB91A /* UIViewController+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2AFE7E17CE25E1003DB91A /* UIViewController+Extensions.m */; };
 		7A2AFF2617CE25E1003DB91A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2AFE8017CE25E1003DB91A /* AppDelegate.m */; };
 		7A2AFF2717CE25E1003DB91A /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2AFE8417CE25E1003DB91A /* AFHTTPClient.m */; };
 		7A2AFF2817CE25E1003DB91A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2AFE8617CE25E1003DB91A /* AFHTTPRequestOperation.m */; };
@@ -71,15 +68,17 @@
 		7A2AFF6717CE25E1003DB91A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A2AFF1D17CE25E1003DB91A /* Default@2x.png */; };
 		7A2AFF6817CE25E1003DB91A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A2AFF1F17CE25E1003DB91A /* InfoPlist.strings */; };
 		7A2AFF6917CE25E1003DB91A /* Restaurant-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A2AFF2117CE25E1003DB91A /* Restaurant-Info.plist */; };
-		7A56B91617CE2CD9000105FC /* BasketItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A56B91517CE2CD9000105FC /* BasketItem.m */; };
 		7A56B91917CE2DB6000105FC /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A56B91817CE2DB6000105FC /* Category.m */; };
 		7A56B91C17CE2DC0000105FC /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A56B91B17CE2DC0000105FC /* News.m */; };
-		7A56B91F17CE2DC9000105FC /* PriceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A56B91E17CE2DC9000105FC /* PriceItem.m */; };
-		7A56B92217CE2DE5000105FC /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A56B92117CE2DE5000105FC /* Product.m */; };
 		7A56B92517CE2DFB000105FC /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A56B92417CE2DFB000105FC /* Restaurant.m */; };
 		7A56B92817CE33BB000105FC /* VDSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A56B92717CE33BB000105FC /* VDSingleton.m */; };
 		7A56B92B17CE34EF000105FC /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A56B92A17CE34EF000105FC /* DataManager.m */; };
 		7A56B92E17CE36E0000105FC /* VDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A56B92D17CE36E0000105FC /* VDHTTPClient.m */; };
+		D51ED35B17D5FF9000A218DE /* BasketItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D51ED35A17D5FF9000A218DE /* BasketItem.m */; };
+		D51ED35E17D5FFA700A218DE /* PriceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D51ED35D17D5FFA700A218DE /* PriceItem.m */; };
+		D51ED36117D5FFAE00A218DE /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = D51ED36017D5FFAE00A218DE /* Product.m */; };
+		D51ED36317D600A800A218DE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51ED36217D600A800A218DE /* SystemConfiguration.framework */; };
+		D51ED36517D600BA00A218DE /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D51ED36417D600BA00A218DE /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,14 +87,8 @@
 		7A2AFE5517CE243F003DB91A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7A2AFE5717CE243F003DB91A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7A2AFE5917CE243F003DB91A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		7A2AFE7717CE25E1003DB91A /* NSDate+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extensions.h"; sourceTree = "<group>"; };
-		7A2AFE7817CE25E1003DB91A /* NSDate+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extensions.m"; sourceTree = "<group>"; };
 		7A2AFE7917CE25E1003DB91A /* UITabBarController+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Extensions.h"; sourceTree = "<group>"; };
 		7A2AFE7A17CE25E1003DB91A /* UITabBarController+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Extensions.m"; sourceTree = "<group>"; };
-		7A2AFE7B17CE25E1003DB91A /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
-		7A2AFE7C17CE25E1003DB91A /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
-		7A2AFE7D17CE25E1003DB91A /* UIViewController+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extensions.h"; sourceTree = "<group>"; };
-		7A2AFE7E17CE25E1003DB91A /* UIViewController+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extensions.m"; sourceTree = "<group>"; };
 		7A2AFE7F17CE25E1003DB91A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7A2AFE8017CE25E1003DB91A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7A2AFE8317CE25E1003DB91A /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
@@ -211,16 +204,10 @@
 		7A2AFF1D17CE25E1003DB91A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7A2AFF2017CE25E1003DB91A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7A2AFF2117CE25E1003DB91A /* Restaurant-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Restaurant-Info.plist"; sourceTree = "<group>"; };
-		7A56B91417CE2CD9000105FC /* BasketItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasketItem.h; sourceTree = "<group>"; };
-		7A56B91517CE2CD9000105FC /* BasketItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasketItem.m; sourceTree = "<group>"; };
 		7A56B91717CE2DB6000105FC /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 		7A56B91817CE2DB6000105FC /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
 		7A56B91A17CE2DC0000105FC /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
 		7A56B91B17CE2DC0000105FC /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
-		7A56B91D17CE2DC9000105FC /* PriceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceItem.h; sourceTree = "<group>"; };
-		7A56B91E17CE2DC9000105FC /* PriceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceItem.m; sourceTree = "<group>"; };
-		7A56B92017CE2DE5000105FC /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
-		7A56B92117CE2DE5000105FC /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		7A56B92317CE2DFB000105FC /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
 		7A56B92417CE2DFB000105FC /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
 		7A56B92617CE33BB000105FC /* VDSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDSingleton.h; sourceTree = "<group>"; };
@@ -229,6 +216,14 @@
 		7A56B92A17CE34EF000105FC /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		7A56B92C17CE36E0000105FC /* VDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDHTTPClient.h; sourceTree = "<group>"; };
 		7A56B92D17CE36E0000105FC /* VDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDHTTPClient.m; sourceTree = "<group>"; };
+		D51ED35917D5FF9000A218DE /* BasketItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasketItem.h; sourceTree = "<group>"; };
+		D51ED35A17D5FF9000A218DE /* BasketItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasketItem.m; sourceTree = "<group>"; };
+		D51ED35C17D5FFA700A218DE /* PriceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceItem.h; sourceTree = "<group>"; };
+		D51ED35D17D5FFA700A218DE /* PriceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceItem.m; sourceTree = "<group>"; };
+		D51ED35F17D5FFAE00A218DE /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		D51ED36017D5FFAE00A218DE /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		D51ED36217D600A800A218DE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D51ED36417D600BA00A218DE /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +231,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51ED36517D600BA00A218DE /* libxml2.dylib in Frameworks */,
+				D51ED36317D600A800A218DE /* SystemConfiguration.framework in Frameworks */,
 				7A2AFE5417CE243F003DB91A /* UIKit.framework in Frameworks */,
 				7A2AFE5617CE243F003DB91A /* Foundation.framework in Frameworks */,
 				7A2AFE5817CE243F003DB91A /* CoreGraphics.framework in Frameworks */,
@@ -266,6 +263,8 @@
 		7A2AFE5217CE243F003DB91A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D51ED36417D600BA00A218DE /* libxml2.dylib */,
+				D51ED36217D600A800A218DE /* SystemConfiguration.framework */,
 				7A2AFE5317CE243F003DB91A /* UIKit.framework */,
 				7A2AFE5517CE243F003DB91A /* Foundation.framework */,
 				7A2AFE5717CE243F003DB91A /* CoreGraphics.framework */,
@@ -303,14 +302,8 @@
 		7A2AFE7617CE25E1003DB91A /* Additions */ = {
 			isa = PBXGroup;
 			children = (
-				7A2AFE7717CE25E1003DB91A /* NSDate+Extensions.h */,
-				7A2AFE7817CE25E1003DB91A /* NSDate+Extensions.m */,
 				7A2AFE7917CE25E1003DB91A /* UITabBarController+Extensions.h */,
 				7A2AFE7A17CE25E1003DB91A /* UITabBarController+Extensions.m */,
-				7A2AFE7B17CE25E1003DB91A /* UIView+Animation.h */,
-				7A2AFE7C17CE25E1003DB91A /* UIView+Animation.m */,
-				7A2AFE7D17CE25E1003DB91A /* UIViewController+Extensions.h */,
-				7A2AFE7E17CE25E1003DB91A /* UIViewController+Extensions.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -589,18 +582,18 @@
 		7A2AFF0117CE25E1003DB91A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7A56B91417CE2CD9000105FC /* BasketItem.h */,
-				7A56B91517CE2CD9000105FC /* BasketItem.m */,
 				7A56B91717CE2DB6000105FC /* Category.h */,
 				7A56B91817CE2DB6000105FC /* Category.m */,
 				7A56B91A17CE2DC0000105FC /* News.h */,
 				7A56B91B17CE2DC0000105FC /* News.m */,
-				7A56B91D17CE2DC9000105FC /* PriceItem.h */,
-				7A56B91E17CE2DC9000105FC /* PriceItem.m */,
-				7A56B92017CE2DE5000105FC /* Product.h */,
-				7A56B92117CE2DE5000105FC /* Product.m */,
 				7A56B92317CE2DFB000105FC /* Restaurant.h */,
 				7A56B92417CE2DFB000105FC /* Restaurant.m */,
+				D51ED35917D5FF9000A218DE /* BasketItem.h */,
+				D51ED35A17D5FF9000A218DE /* BasketItem.m */,
+				D51ED35C17D5FFA700A218DE /* PriceItem.h */,
+				D51ED35D17D5FFA700A218DE /* PriceItem.m */,
+				D51ED35F17D5FFAE00A218DE /* Product.h */,
+				D51ED36017D5FFAE00A218DE /* Product.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -720,10 +713,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A2AFF2217CE25E1003DB91A /* NSDate+Extensions.m in Sources */,
 				7A2AFF2317CE25E1003DB91A /* UITabBarController+Extensions.m in Sources */,
-				7A2AFF2417CE25E1003DB91A /* UIView+Animation.m in Sources */,
-				7A2AFF2517CE25E1003DB91A /* UIViewController+Extensions.m in Sources */,
 				7A2AFF2617CE25E1003DB91A /* AppDelegate.m in Sources */,
 				7A2AFF2717CE25E1003DB91A /* AFHTTPClient.m in Sources */,
 				7A2AFF2817CE25E1003DB91A /* AFHTTPRequestOperation.m in Sources */,
@@ -775,15 +765,15 @@
 				7A2AFF5617CE25E1003DB91A /* AppSettings.m in Sources */,
 				7A2AFF5717CE25E1003DB91A /* Database.xcdatamodeld in Sources */,
 				7A2AFF5817CE25E1003DB91A /* Annotation.m in Sources */,
-				7A56B91617CE2CD9000105FC /* BasketItem.m in Sources */,
 				7A56B91917CE2DB6000105FC /* Category.m in Sources */,
 				7A56B91C17CE2DC0000105FC /* News.m in Sources */,
-				7A56B91F17CE2DC9000105FC /* PriceItem.m in Sources */,
-				7A56B92217CE2DE5000105FC /* Product.m in Sources */,
 				7A56B92517CE2DFB000105FC /* Restaurant.m in Sources */,
 				7A56B92817CE33BB000105FC /* VDSingleton.m in Sources */,
 				7A56B92B17CE34EF000105FC /* DataManager.m in Sources */,
 				7A56B92E17CE36E0000105FC /* VDHTTPClient.m in Sources */,
+				D51ED35B17D5FF9000A218DE /* BasketItem.m in Sources */,
+				D51ED35E17D5FFA700A218DE /* PriceItem.m in Sources */,
+				D51ED36117D5FFAE00A218DE /* Product.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -861,8 +851,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Restaurant/Restaurant-Prefix.pch";
-				INFOPLIST_FILE = "Restaurant/Restaurant-Info.plist";
+				GCC_PREFIX_HEADER = "Restaurant/Classes/Restaurant-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
+				INFOPLIST_FILE = "Restaurant/Supporting Files/Restaurant-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -872,8 +863,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Restaurant/Restaurant-Prefix.pch";
-				INFOPLIST_FILE = "Restaurant/Restaurant-Info.plist";
+				GCC_PREFIX_HEADER = "Restaurant/Classes/Restaurant-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
+				INFOPLIST_FILE = "Restaurant/Supporting Files/Restaurant-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

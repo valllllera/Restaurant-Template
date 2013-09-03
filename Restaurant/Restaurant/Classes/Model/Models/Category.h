@@ -19,13 +19,5 @@
 @property (nonatomic, copy) NSString * title;
 @property (nonatomic, copy) NSString * descr;
 @property (nonatomic, strong) NSSet *products;
-@end
-
-@interface Category (CoreDataGeneratedAccessors)
-
-- (void)addProductsObject:(Product *)value;
-- (void)removeProductsObject:(Product *)value;
-- (void)addProducts:(NSSet *)values;
-- (void)removeProducts:(NSSet *)values;
 
 @end

@@ -3,8 +3,8 @@
     <entity name="BasketItem" representedClassName="BasketItem" syncable="YES">
         <attribute name="count" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="created" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="priceType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <relationship name="product" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Product" syncable="YES"/>
+        <relationship name="priceItem" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PriceItem" inverseName="basketItems" inverseEntity="PriceItem" syncable="YES"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="basketItems" inverseEntity="Product" syncable="YES"/>
     </entity>
     <entity name="Category" representedClassName="Category" syncable="YES">
         <attribute name="descr" optional="YES" attributeType="String" syncable="YES"/>
@@ -12,7 +12,7 @@
         <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ord" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="products" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Product" syncable="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="category" inverseEntity="Product" syncable="YES"/>
     </entity>
     <entity name="News" representedClassName="News" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
@@ -26,6 +26,7 @@
         <attribute name="ord" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="price" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="basketItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BasketItem" inverseName="priceItem" inverseEntity="BasketItem" syncable="YES"/>
         <relationship name="product" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="priceItems" inverseEntity="Product" syncable="YES"/>
     </entity>
     <entity name="Product" representedClassName="Product" syncable="YES">
@@ -34,9 +35,8 @@
         <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ord" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="announces" optional="YES" toMany="YES" deletionRule="No Action" syncable="YES"/>
-        <relationship name="basketItems" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="BasketItem" syncable="YES"/>
-        <relationship name="category" optional="YES" minCount="1" maxCount="1" deletionRule="No Action" destinationEntity="Category" syncable="YES"/>
+        <relationship name="basketItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BasketItem" inverseName="product" inverseEntity="BasketItem" syncable="YES"/>
+        <relationship name="category" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="products" inverseEntity="Category" syncable="YES"/>
         <relationship name="priceItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PriceItem" inverseName="product" inverseEntity="PriceItem" syncable="YES"/>
     </entity>
     <entity name="Restaurant" representedClassName="Restaurant" syncable="YES">
@@ -53,8 +53,8 @@
         <element name="BasketItem" positionX="160" positionY="192" width="128" height="105"/>
         <element name="Category" positionX="160" positionY="192" width="128" height="135"/>
         <element name="News" positionX="160" positionY="192" width="128" height="135"/>
-        <element name="Product" positionX="160" positionY="192" width="128" height="180"/>
+        <element name="PriceItem" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Product" positionX="160" positionY="192" width="128" height="165"/>
         <element name="Restaurant" positionX="160" positionY="192" width="128" height="165"/>
-        <element name="PriceItem" positionX="160" positionY="192" width="128" height="105"/>
     </elements>
 </model>
